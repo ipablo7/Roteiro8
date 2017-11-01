@@ -1,5 +1,4 @@
 #include "ContaEspecial.h"
-#include <iostream>
 
 using namespace std;
 
@@ -7,12 +6,16 @@ ContaEspecial::ContaEspecial(){
 
 }
 
-ContaEspecial::ContaEspecial(string nomeCliente, double salarioMensal, double saldo, string numeroConta)
-:Conta(nomeCliente, salarioMensal, saldo, numeroConta)
+ContaEspecial::~ContaEspecial(){
+
+}
+
+ContaEspecial::ContaEspecial(string nomeCliente, string numeroConta,double salarioMensal, double saldo)
+:Conta(nomeCliente, numeroConta,salarioMensal, saldo)
 {
 
 }
 void ContaEspecial::definirLimite()
 {
-    limite = 3 * salarioMensal;
+    setLimite(3 * getSalarioMensal());
 }

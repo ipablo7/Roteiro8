@@ -1,7 +1,7 @@
 #ifndef CONTA_H
 #define CONTA_H
 
-#include "Iconta.h"
+#include "IConta.h"
 #include <iostream>
 #include <string>
 
@@ -12,13 +12,14 @@ class Conta: public IConta
     private:
         string nomeCliente;
         double salarioMensal;
-        double numeroConta;
+        string numeroConta;
         double saldo;
         double limite;
 
     public:
         Conta();
-        Conta(string,double,double,double);
+        Conta(string,string,double,double);
+        virtual ~Conta();
 
         void setSalarioMensal(double);
         double getSalarioMensal();
@@ -26,8 +27,8 @@ class Conta: public IConta
         void setSaldo(double);
         double getSaldo();
 
-        void setNumeroConta(double);
-        double getNumeroConta();
+        void setNumeroConta(string);
+        string getNumeroConta();
 
         void setLimite(double);
         double getLimite();
@@ -39,8 +40,6 @@ class Conta: public IConta
         void depositar(double);
 
         virtual void definirLimite();
-
-
 
 };
 

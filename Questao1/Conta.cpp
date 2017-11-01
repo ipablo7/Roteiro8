@@ -11,6 +11,17 @@ Conta::Conta()
     setSaldo(0);
 }
 
+Conta::Conta(string nome,string numC,double salM,double saldo1){
+    nomeCliente = nome;
+    numeroConta = numC;
+    salarioMensal = salM;
+    saldo = saldo1;
+}
+
+Conta::~Conta(){
+
+}
+
 void Conta::setSalarioMensal(double sal)
 {
     salarioMensal = sal;
@@ -30,12 +41,12 @@ double Conta::getSaldo()
     return saldo;
 }
 
-void Conta::setNumeroConta(double numConta)
+void Conta::setNumeroConta(string numConta)
 {
     numeroConta = numConta;
 }
 
-double Conta::getNumeroConta()
+string Conta::getNumeroConta()
 {
     return numeroConta;
 }
