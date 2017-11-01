@@ -5,9 +5,9 @@ using namespace std;
 
 Conta::Conta()
 {
-    setNomeCliente("");
+    setNomeCliente(" ");
     setSalarioMensal(0.0);
-    setNumeroConta(0);
+    setNumeroConta(" ");
     setSaldo(0);
 }
 
@@ -80,7 +80,8 @@ void Conta::sacar(double valor)
     if(valor <= (limite + saldo))
     {
         saldo -= valor;
-        cout << "Saque: R$ " << valor;
+        cout << "Saque: RS " << valor;
+        cout << "Saldo: " << saldo;
     }
     else
         cout<<"Limite insuficiente.\n";

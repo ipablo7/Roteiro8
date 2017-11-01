@@ -14,13 +14,13 @@ int main(){
     cout << "Digite o nome do cliente: " << endl;
     cin>>nomeCliente;
 
-    cout << "Digite o numero da conta do cliente: "<<nomeCliente << endl;
+    cout << "Digite o numero da conta do cliente "<<nomeCliente << ": " << endl;
     cin>>numeroConta;
 
-    cout << "Digite o salario mensal do cliente: " <<nomeCliente<< endl;
+    cout << "Digite o salario mensal do cliente " <<nomeCliente<< ": " << endl;
     cin>>salarioMensal;
 
-    cout << "Digite o saldo do cliente: " <<nomeCliente<< endl;
+    cout << "Digite o saldo do cliente " <<nomeCliente<< ": " << endl;
     cin>>saldo;
 
     conta = Conta(nomeCliente, numeroConta, salarioMensal, saldo);
@@ -31,13 +31,13 @@ int main(){
     cout << "Digite o nome do cliente: " << endl;
     cin>>nomeCliente;
 
-    cout << "Digite o numero da conta do cliente: "<<nomeCliente << endl;
+    cout << "Digite o numero da conta do cliente "<<nomeCliente << ": " << endl;
     cin>>numeroConta;
 
-    cout << "Digite o salario mensal do cliente: " <<nomeCliente<< endl;
+    cout << "Digite o salario mensal do cliente: " <<nomeCliente<< ": " << endl;
     cin>>salarioMensal;
 
-    cout << "Digite o saldo do cliente: " <<nomeCliente<< endl;
+    cout << "Digite o saldo do cliente " <<nomeCliente<< ": " << endl;
     cin>>saldo;
 
     contaesp = ContaEspecial(nomeCliente, numeroConta, salarioMensal, saldo);
