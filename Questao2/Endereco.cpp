@@ -44,23 +44,13 @@ int Endereco::getNum(){
 }
 
 void Endereco::exibeEnd(){
-    cout << logradouro << ", " << num << endl << bairro << " " << cep << endl << cidade << endl;
+    cout << getLogradouro() << ", " << getNum() << endl << getBairro() << " " << getCep() << endl << getCidade() << endl;
 }
 
 void Endereco::inserirEnd(string l, int n, string b, string cep, string c){
-        cout << "Insira o logradouro: ";
-        cin >> l;
-        setLogradouro(l);
-        cout << "Insira o numero: ";
-        cin >> n;
-        setNum(n);
-        cout << "Insira o bairro: ";
-        cin >> b;
-        setBairro(b);
-        cout << "Insira o CEP: ";
-        cin >> cep;
-        setCep(cep);
-        cout << "Insira a cidade: ";
-        cin >> c;
-        setCidade(c);
+    setLogradouro(l);
+    setNum(n);
+    setBairro(b);
+    setCep(cep);
+    setCidade(c);
 }

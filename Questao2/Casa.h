@@ -9,7 +9,8 @@ class Casa : public Imovel
         Casa();
         virtual ~Casa();
 
-        void descricao();
+        void setDescricao(string);
+        string getDescricao();
 
         void setNumPavimentos(int);
         void setQuantQuartos(int);
@@ -21,6 +22,7 @@ class Casa : public Imovel
         double getAreaC();
 
     private:
+        string descricaoCasa;
         int numPavimentos, quantQuartos;
         double areaT, areaC;
 };

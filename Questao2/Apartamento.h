@@ -10,7 +10,8 @@ class Apartamento : public Imovel
         Apartamento();
         virtual ~Apartamento();
 
-        void descricao();
+       void setDescricao(string);
+       string getDescricao();
 
         void setPosicao(string);
         void setValorCond(double);
@@ -20,7 +21,7 @@ class Apartamento : public Imovel
         int getNumVagasGaragem();
 
     private:
-        string posicao;
+        string descricaoApt, posicao;
         double valorCond;
         int numVagasGaragem;
 };

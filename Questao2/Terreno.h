@@ -10,12 +10,14 @@ class Terreno : public Imovel
         Terreno();
         virtual ~Terreno();
 
-        void descricao();
+        void setDescricao(string s);
+        string getDescricao();
 
         void setArea(double);
         double getArea();
 
     private:
+        string descricaoT;
         double area;
 };
 

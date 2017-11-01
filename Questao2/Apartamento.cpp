@@ -12,11 +12,12 @@ Apartamento::~Apartamento()
     //dtor
 }
 
-void Apartamento::descricao(){
-    cout << "Apartamento " << posicao << " com " << numVagasGaragem << "vagas na garagem" << endl <<
-            "Valor do condominio = " << valorCond << " reais." << endl;
-    cout << "Localizacao: " << endl;
-    getEndereco().exibeEnd();
+void Apartamento::setDescricao(string s){
+    descricaoApt = s;
+}
+
+string Apartamento::getDescricao(){
+    return descricaoApt;
 }
 
 void Apartamento::setPosicao(string p){

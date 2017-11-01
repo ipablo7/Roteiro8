@@ -12,10 +12,12 @@ Terreno::~Terreno()
     //dtor
 }
 
-void Terreno::descricao(){
-    cout << "Terreno com area = " << area << "m²" << endl;
-    cout << "Localizacao: " << endl;
-    getEndereco().exibeEnd();
+void Terreno::setDescricao(string s){
+    descricaoT = s;
+}
+
+string Terreno::getDescricao(){
+    return descricaoT;
 }
 
 void Terreno::setArea(double a){

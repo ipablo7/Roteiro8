@@ -4,6 +4,7 @@
 #include <iostream>
 #include "Endereco.h"
 #include <string>
+#include <stdio.h>
 
 using namespace std;
 
@@ -14,7 +15,8 @@ class Imovel
         virtual ~Imovel();
         void setEndereco(string l, int n, string b, string cep, string c);
         Endereco getEndereco();
-        virtual void descricao() = 0;
+        virtual string getDescricao() = 0;
+        virtual void setDescricao(string) = 0;
 
     private:
         Endereco endereco;

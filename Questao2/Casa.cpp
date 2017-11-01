@@ -12,11 +12,12 @@ Casa::~Casa()
     //dtor
 }
 
-void Casa::descricao(){
-    cout << "Casa com " << numPavimentos << " pavimentos, " << quantQuartos << " quartos." << endl <<
-            "Area do terreno = " << areaT << endl << "Area construida = " << areaC << endl;
-    cout << "Localizacao: " << endl;
-    getEndereco().exibeEnd();
+void Casa::setDescricao(string s){
+    descricaoCasa = s;
+}
+
+string Casa::getDescricao(){
+    return descricaoCasa;
 }
 
 void Casa::setNumPavimentos(int nP){
