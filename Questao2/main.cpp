@@ -114,9 +114,13 @@ int main()
                 cont++;
                 break;
             case 4:
-                for(int i = 0; i < 6; i++){
+                for(int i = 0; i <= cont; i++){
                     im[i]->getDescricao();
-                    //rim[i]->getEndereco();
+                    cout << im[i]->getEndereco().getLogradouro() << ", "
+                         << im[i]->getEndereco().getNumero() << ", "
+                         << im[i]->getEndereco().getBairro() << endl
+                         << im[i]->getEndereco().getCEP() << endl
+                         << im[i]->getEndereco().getCidade() << endl;
                 }
                 break;
             case 5:

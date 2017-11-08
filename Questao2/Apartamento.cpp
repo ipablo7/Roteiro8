@@ -30,7 +30,8 @@ double Apartamento::getValorCondominio(){
     return valorCondominio;
 }
 void Apartamento::getDescricao(){
-    cout << "Bloco: " << posicao << endl
+    cout << "Apartamento: " << endl
+         << "Bloco: " << posicao << endl
          << "Numero de vagas garagem: " << numVagasGaragem << endl
          << "Valor condominio = " << valorCondominio << endl;
 }

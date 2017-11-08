@@ -44,7 +44,8 @@ double Casa::getAreaC(){
 }
 
 void Casa::getDescricao(){
-    cout << "Numero de pavimetos: " << numPavimentos << endl
+    cout << "Casa: " << endl
+         << "Numero de pavimetos: " << numPavimentos << endl
          << "Quantidade de quartos: " << quantQuartos << endl
          <<"Area construida = " << areaC << endl
          << "Area do terreno = " << areaT << endl;
