@@ -14,11 +14,12 @@ class Funcionario
 
     public:
         Funcionario();
+        Funcionario(string n, int m);
 
-        void setMatricula(int);
-        int getMatricula();
-        void setNome(string);
-        string getNome();
+        virtual void setMatricula(int) = 0;
+        virtual int getMatricula() = 0;
+        virtual void setNome(string) = 0;
+        virtual string getNome() = 0;
 
         virtual double calcularSalario() = 0;
 

@@ -5,21 +5,8 @@ Funcionario::Funcionario()
 
 }
 
-void Funcionario::setMatricula(int matricula)
+Funcionario::Funcionario(string n, int m)
 {
-    this -> matricula = matricula;
-}
-
-int Funcionario::getMatricula()
-{
-    return matricula;
-}
-
-void Funcionario::setNome(string nome)
-{
-    this -> nome = nome;
-}
-string Funcionario::getNome()
-{
-    return nome;
+    nome = n;
+    matricula = m;
 }
