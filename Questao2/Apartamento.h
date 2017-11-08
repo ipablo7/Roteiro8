@@ -9,21 +9,17 @@ class Apartamento : public Imovel
     public:
         Apartamento();
         virtual ~Apartamento();
-
-       void setDescricao(string);
-       string getDescricao();
-
         void setPosicao(string);
-        void setValorCond(double);
         void setNumVagasGaragem(int);
+        void setValorCondominio(double);
         string getPosicao();
-        double getValorCond();
         int getNumVagasGaragem();
-
+        double getValorCondominio();
+        void getDescricao();
     private:
-        string descricaoApt, posicao;
-        double valorCond;
+        string posicao;
         int numVagasGaragem;
+        double valorCondominio;
 };
 
 #endif // APARTAMENTO_H

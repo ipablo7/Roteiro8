@@ -3,15 +3,12 @@
 
 #include "Imovel.h"
 
+
 class Casa : public Imovel
 {
     public:
         Casa();
         virtual ~Casa();
-
-        void setDescricao(string);
-        string getDescricao();
-
         void setNumPavimentos(int);
         void setQuantQuartos(int);
         void setAreaT(double);
@@ -20,9 +17,8 @@ class Casa : public Imovel
         int getQuantQuartos();
         double getAreaT();
         double getAreaC();
-
+        void getDescricao();
     private:
-        string descricaoCasa;
         int numPavimentos, quantQuartos;
         double areaT, areaC;
 };

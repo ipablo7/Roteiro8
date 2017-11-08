@@ -1,7 +1,6 @@
 #ifndef ENDERECO_H
 #define ENDERECO_H
 
-#include <iostream>
 #include <string>
 
 using namespace std;
@@ -10,25 +9,21 @@ class Endereco
 {
     public:
         Endereco();
-        void setLogradouro(string);
-        string getLogradouro();
-        void setBairro(string);
-        string getBairro();
-        void setCidade(string);
-        string getCidade();
-        void setCep(string);
-        string getCep();
-        void setNum(int);
-        int getNum();
-        void exibeEnd();
-        void inserirEnd(string l, int n, string b, string cep, string c);
         virtual ~Endereco();
+        void setLogradouro(string);
+        void setBairro(string);
+        void setCidade(string);
+        void setCEP(string);
+        void setNumero(int);
+        string getLogradouro();
+        string getBairro();
+        string getCidade();
+        string getCEP();
+        int getNumero();
+
     private:
-        string logradouro;
-        string bairro;
-        string cidade;
-        string cep;
-        int num;
+        string logradouro, bairro, cidade, CEP;
+        int numero;
 };
 
 #endif // ENDERECO_H

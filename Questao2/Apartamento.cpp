@@ -1,5 +1,4 @@
 #include "Apartamento.h"
-
 using namespace std;
 
 Apartamento::Apartamento()
@@ -12,29 +11,26 @@ Apartamento::~Apartamento()
     //dtor
 }
 
-void Apartamento::setDescricao(string s){
-    descricaoApt = s;
+void Apartamento::setPosicao(string a){
+    posicao = a;
 }
-
-string Apartamento::getDescricao(){
-    return descricaoApt;
+void Apartamento::setNumVagasGaragem(int a){
+    numVagasGaragem = a;
 }
-
-void Apartamento::setPosicao(string p){
-    posicao = p;
-}
-void Apartamento::setValorCond(double v){
-    valorCond = v;
-}
-void Apartamento::setNumVagasGaragem(int n){
-    numVagasGaragem = n;
+void Apartamento::setValorCondominio(double a){
+    valorCondominio = a;
 }
 string Apartamento::getPosicao(){
     return posicao;
 }
-double Apartamento::getValorCond(){
-    return valorCond;
-}
 int Apartamento::getNumVagasGaragem(){
     return numVagasGaragem;
+}
+double Apartamento::getValorCondominio(){
+    return valorCondominio;
+}
+void Apartamento::getDescricao(){
+    cout << "Bloco: " << posicao << endl
+         << "Numero de vagas garagem: " << numVagasGaragem << endl
+         << "Valor condominio = " << valorCondominio << endl;
 }

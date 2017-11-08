@@ -1,5 +1,4 @@
 #include "Casa.h"
-
 using namespace std;
 
 Casa::Casa()
@@ -12,35 +11,41 @@ Casa::~Casa()
     //dtor
 }
 
-void Casa::setDescricao(string s){
-    descricaoCasa = s;
+void Casa::setNumPavimentos(int a){
+    numPavimentos = a;
 }
 
-string Casa::getDescricao(){
-    return descricaoCasa;
+void Casa::setQuantQuartos(int a){
+    quantQuartos = a;
 }
 
-void Casa::setNumPavimentos(int nP){
-    numPavimentos = nP;
+void Casa::setAreaT(double a){
+    areaT = a;
 }
-void Casa::setQuantQuartos(int qQ){
-    quantQuartos = qQ;
+
+void Casa::setAreaC(double a){
+    areaC = a;
 }
-void Casa::setAreaT(double aT){
-    areaT = aT;
-}
-void Casa::setAreaC(double aC){
-    areaC = aC;
-}
+
 int Casa::getNumPavimentos(){
     return numPavimentos;
 }
+
 int Casa::getQuantQuartos(){
     return quantQuartos;
 }
+
 double Casa::getAreaT(){
     return areaT;
 }
+
 double Casa::getAreaC(){
     return areaC;
+}
+
+void Casa::getDescricao(){
+    cout << "Numero de pavimetos: " << numPavimentos << endl
+         << "Quantidade de quartos: " << quantQuartos << endl
+         <<"Area construida = " << areaC << endl
+         << "Area do terreno = " << areaT << endl;
 }
