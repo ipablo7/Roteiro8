@@ -72,22 +72,24 @@ string Conta::getNomeCliente()
 
 void Conta::definirLimite()
 {
-    limite = 2 * salarioMensal;
+    limite = salarioMensal*2;
 }
 
 void Conta::sacar(double valor)
 {
-    if(valor <= (limite + saldo))
+    if(limite + saldo >= valor)
     {
         saldo -= valor;
-        cout << "Saque: RS " << valor;
-        cout << "Saldo: " << saldo;
+        cout << "Saque: RS" << valor << endl;
+        cout << "Saldo: " << saldo << endl;
     }
-    else
+    else{
         cout<<"Limite insuficiente.\n";
+    }
 }
 void Conta::depositar(double valor)
 {
     saldo+=valor;
+    cout << "Saldo atual: RS" << saldo << endl;
 }
 

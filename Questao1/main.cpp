@@ -24,6 +24,7 @@ int main(){
     cin>>saldo;
 
     conta = Conta(nomeCliente, numeroConta, salarioMensal, saldo);
+    conta.definirLimite();
 
     cout << endl << endl;
 
@@ -41,10 +42,9 @@ int main(){
     cin>>saldo;
 
     contaesp = ContaEspecial(nomeCliente, numeroConta, salarioMensal, saldo);
+    contaesp.definirLimite();
 
-
-    cout<<"*****Conta corrente*****\n" << endl;
-
+    cout<<"\n*****Conta corrente*****\n" << endl;
     cout<<"Digite o valor que voce desejar sacar: ";
     cin>>valor;
     conta.sacar(valor);

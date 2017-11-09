@@ -13,7 +13,7 @@ ContaEspecial::~ContaEspecial(){
 ContaEspecial::ContaEspecial(string nomeCliente, string numeroConta,double salarioMensal, double saldo)
 :Conta(nomeCliente, numeroConta,salarioMensal, saldo)
 {
-
+    definirLimite();
 }
 void ContaEspecial::definirLimite()
 {

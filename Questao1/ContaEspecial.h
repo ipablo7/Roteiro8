@@ -11,7 +11,7 @@ class ContaEspecial: public Conta
         ContaEspecial();
         ContaEspecial(string nomeCliente, string numeroConta,double salarioMensal, double saldo);
         virtual ~ContaEspecial();
-        void definirLimite();
+        virtual void definirLimite();
 
 };
 
